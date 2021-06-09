@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {box-sizing: border-box;}
+
+.container{
+    background: cornflowerblue;
+    display: flex;
+    flex: wrap;
+    min-width: 100%;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.container2{
+    background: cornflowerblue;
+    display: flex;
+    flex: wrap;
+    min-width: 100%;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.container3{
+    background: cornflowerblue;
+    display: flex;
+    flex: wrap;
+    min-width: 100%;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.box {
+    color: rgb(219, 93, 93);
+    font-size: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding:15px;
+    border:solid rgb(0, 0, 0);
+    
+}
+.menu {
+    flex-wrap: wrap;
+    flex-direction: 
+}
+
+.button{
+    width: 31%;
+}
+
+.body{
+    color:cornsilk;
+}
+
+*{
+    align-content: center;
+}
+
+.text {
+    width: 31%
+}
+#catAndSlice{
+    max-height: 100vh;
+}
+
+#portfolio{
+
+}
+
+#linkedin{
+
+}
+
+#Old{
+    
+}

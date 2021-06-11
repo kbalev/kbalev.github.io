@@ -100,16 +100,43 @@
 }
 
 
-#imagebox1{
-}
-
 
 .grid1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 33.33%;
     min-height: 33.33%;
-    animation: firstAnimation 10s ease 1s infinite alternate;
+    
    }
-   
+.hexagon{
+    position:relative;
+    width: 150px;
+    height: 86px;
+    background: black;
+    animation: firstAnimation 10s ease 1s infinite alternate;  
+}
+.hexagon::before,
+.hexagon::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    animation: firstAnimation 10s ease 1s infinite alternate;
+}
+.hexagon::before{
+    transform: rotate(240deg);
+}
+.hexagon::after{
+    transform: rotate(-240deg);
+}
+
 .grid2{
     width: 33.33%;
     height: 33.33%;
@@ -118,8 +145,48 @@
     width: 33.33%;
     height: 33.33%;
     border-radius: 50%;
-    animation: secondAnimation 10s ease 1s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
+
+.star{  position: relative;
+        display: block;
+        width: 0px;
+        height: 0px;
+        border-right: 100px solid transparent;
+        border-top: 70px solid #000;
+        border-left: 100px solid transparent;
+        animation: secondAnimation 10s ease 1s infinite alternate;
+        
+        }
+
+.star::before,
+.star::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: inherit;
+    height: inherit;
+    border-right: inherit;
+    border-left: inherit;
+    border-top: inherit;
+    border-bottom: inherit;
+    animation: secondAnimation 10s ease 1s infinite alternate;
+    
+}
+
+.star::before{
+    transform: translate(-100px, -70px) rotate(71deg) ;
+    
+}
+.star::after{
+    transform:translate(-100px, -70px) rotate(-71deg);
+}
 
 .grid4{
     width: 33.33%;
@@ -219,12 +286,11 @@ a{
 
     }
     50%{
-        background-color: aqua;
+        background-color: rgb(150, 109, 189);
 
     }
     100%{
-        background-color: whitesmoke;
-        box-shadow: 3px 3px 0 black;
+        background-color: blueviolet;
         border-radius: 50%;
     }
 }
@@ -234,14 +300,13 @@ a{
         
     }
     10%{
-        color:palegreen;
         box-shadow: 3px 3px 0px slategray;
     }
     20%{
 
     }
     100%{
-        background-color:palegreen;
+    
         box-shadow: 3px 3px 3px slategray;
     }
 }

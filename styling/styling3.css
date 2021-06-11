@@ -12,7 +12,7 @@
     display: flex;
     flex: wrap;
     flex-direction: column;
-    border: solid pink;
+    /* border: solid pink; */
 
     
 }
@@ -33,12 +33,12 @@
     flex-direction: row;
     align-content: space-around;
     justify-content: space-around;
-    border: solid red;
+    /* border: solid red; */
 }
 .container4{
     display: flex;
     justify-content: center;
-    border: solid brown;
+    /* border: solid brown; */
     height: 100vh;
     width: 100vw;
     padding: 5%;
@@ -49,7 +49,7 @@
     /* border: solid chartreuse; */
 }
 .box {
-    color: rgb(219, 93, 93);
+    color: navy;
     font-size: 50px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
@@ -64,12 +64,12 @@
 }
 
 .box1 {
-    color: rgb(219, 93, 93);
+    color: navy;
     font-size: 50px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
     padding:15px;
-    border:solid rgb(0, 0, 0);
+    /* border:solid black; */
     min-width: 31%;
     
 }
@@ -313,5 +313,28 @@ a{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+
+
+@media all and (max-width:600px) {
+
+    #catAndSlice{
+        display: none;
+    }
+    #mechSquare{
+        display: none;
+    }
+    /* .grid1, .grid3, .grid7, .grid9 {
+        max-height: 0%;
+        max-width: 0%;
+        display: none;
+    } */
+    *{
+        font-size: 33%;
+    }
+    .arrow, .circle{
+        scale: 50%;
     }
 }
